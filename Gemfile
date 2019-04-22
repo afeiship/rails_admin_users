@@ -13,3 +13,6 @@ gemspec
 
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
+
+gem 'bcrypt', '~> 3.1.7'
+gem 'kaminari'

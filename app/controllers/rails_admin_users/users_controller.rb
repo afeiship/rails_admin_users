@@ -28,7 +28,7 @@ module RailsAdminUsers
     private
 
     def allow_params
-      params.require(:user).permit(:username, :password, :password_confirmation)
+      params.require(:user).permit(:username, :email, :password, :password_confirmation)
     end
 
     def set_user
