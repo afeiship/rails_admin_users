@@ -5,24 +5,24 @@ module RailsAdminUsers
     before_action :set_user, only: [:show]
 
     def index
-      @items = User.page(params[:page]).per(params[:size])
+      @users = User.page(params[:page]).per(params[:size])
     end
 
     def show
-      @item
+      @user
     end
 
     def create
-      @item = User.new(allow_params)
-      @item.save
+      @user = User.new(allow_params)
+      @user.save
     end
 
     def update
-      @item.update allow_params if @item
+      @user.update allow_params if @user
     end
 
     def destroy
-      @item.destroy if @item
+      @user.destroy if @user
     end
 
     private
@@ -32,7 +32,7 @@ module RailsAdminUsers
     end
 
     def set_user
-      @item = User.find(params[:id])
+      @user = User.find(params[:id])
     end
   end
 end
