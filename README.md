@@ -15,6 +15,19 @@
 ./bin/rails g model User username:string email:string password_digest:string auth_token:token
 ```
 
+## generators
+~~~
+RailsAdminUsers:
+  rails_admin_users:install
+  rails_admin_users:seed
+~~~
+
+## dependencies
+```rb
+gem 'bcrypt', '~> 3.1.7'
+gem 'kaminari'
+```
+
 ## routes
 ```shell
 $ rake app:routes
