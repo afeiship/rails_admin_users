@@ -16,9 +16,9 @@
 ```
 
 ## routes
-~~~
+```shell
 $ rake app:routes
-<!-- .... -->
+# ....
 Routes for RailsAdminUsers::Engine:
     users GET    /users(.:format)          rails_admin_users/users#index
           POST   /users(.:format)          rails_admin_users/users#create
@@ -32,7 +32,7 @@ edit_user GET    /users/:id/edit(.:format) rails_admin_users/users#edit
      root GET    /                         rails_admin_users/users#index
     login GET    /login(.:format)          rails_admin_users/sessions#new
    logout DELETE /logout(.:format)         rails_admin_users/sessions#destroy
-~~~
+```
 
 ## resources
 - https://medium.com/@wintermeyer/authentication-from-scratch-with-rails-5-2-92d8676f6836
