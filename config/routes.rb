@@ -1,6 +1,6 @@
 RailsAdminUsers::Engine.routes.draw do
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: [:create]
 
   root to: "users#index"
   get "login", to: "sessions#new"

@@ -2,6 +2,8 @@ require_dependency "rails_admin_users/application_controller"
 
 module RailsAdminUsers
   class SessionsController < ApplicationController
+    skip_before_action :require_login!
+
     def new
     end
 
