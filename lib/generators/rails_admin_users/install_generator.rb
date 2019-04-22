@@ -10,5 +10,11 @@ module RailsAdminUsers
     def generate_model
       rake "rails_admin_users:install:migrations"
     end
+
+    def create_routes
+      unless options[:full]
+        route 'mount RailsAdminUsers::Engine => "/rails_admin_users"'
+      end
+    end
   end
 end
