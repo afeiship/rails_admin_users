@@ -6,5 +6,9 @@ module RailsAdminUsers
       root = RailsAdminUsers.app_root
       directory "#{root}/app/views", "app/views"
     end
+
+    def generate_model
+      rake "rails_admin_users:install:migrations"
+    end
   end
 end
