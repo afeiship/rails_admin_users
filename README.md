@@ -1,6 +1,27 @@
 # RailsAdminUsers
 > Rails gem for admin users.
 
+## installation
+```rb
+gem 'rails_admin_users', path: '/Users/feizheng/github/rails_admin_users'
+```
+
+## option
+> ./bin/rails rails_admin_users:install --full
+
+| option   | type    | description             |
+| -------- | ------- | ----------------------- |
+| full     | boolean | mount to root route     |
+
+## defaults
+```rb
+RailsAdminUsers::User.create({
+  username: "admin",
+  password: "123123",
+  email: "1290657123@qq.com",
+})
+```
+
 ## model
 > The users table fileds.
 
@@ -15,14 +36,7 @@
 ./bin/rails g model User username:string email:string password_digest:string auth_token:token
 ```
 
-## generators
-~~~
-RailsAdminUsers:
-  rails_admin_users:install
-  rails_admin_users:seed
-~~~
-
-## generate
+## get-started
 ```shell
 ./bin/rails rails_admin_users:install
 bundle install
@@ -30,11 +44,13 @@ rake db:migrate
 ./bin/rails rails_pages:seed
 ```
 
-## dependencies
-```rb
-gem 'bcrypt', '~> 3.1.7'
-gem 'kaminari'
-```
+## generators
+~~~
+RailsAdminUsers:
+  rails_admin_users:install
+  rails_admin_users:seed
+~~~
+
 
 ## routes
 ```shell
