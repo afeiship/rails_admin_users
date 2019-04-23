@@ -2,16 +2,25 @@
 > Rails gem for admin users.
 
 ## installation
-```rb
-gem 'rails_admin_users', path: '/Users/feizheng/github/rails_admin_users'
-```
+1. Add gem to Gemfile
+  ```rb
+  # add:
+  gem 'rails_admin_users', path: '/Users/feizheng/github/rails_admin_users'
+  ```
+2. Install migration/views
+  ```shell
+  ./bin/rails rails_admin_users:install
+  bundle install
+  rake db:migrate
+  ./bin/rails rails_pages:seed
+  ```
 
 ## option
 > ./bin/rails rails_admin_users:install --full
 
-| option   | type    | description             |
-| -------- | ------- | ----------------------- |
-| full     | boolean | mount to root route     |
+| option | type    | description         |
+| ------ | ------- | ------------------- |
+| full   | boolean | mount to root route |
 
 ## defaults
 ```rb
@@ -34,14 +43,6 @@ RailsAdminUsers::User.create({
 
 ```shell
 ./bin/rails g model User username:string email:string password_digest:string auth_token:token
-```
-
-## get-started
-```shell
-./bin/rails rails_admin_users:install
-bundle install
-rake db:migrate
-./bin/rails rails_pages:seed
 ```
 
 ## generators
