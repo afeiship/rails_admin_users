@@ -7,7 +7,7 @@
   # add:
   gem 'rails_admin_users', path: '/Users/feizheng/github/rails_admin_users'
   ```
-2. Install migration/views
+2. Install migration/views/routes/gem
   ```shell
   ./bin/rails rails_admin_users:install
   bundle install
