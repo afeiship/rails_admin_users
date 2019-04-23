@@ -4,7 +4,10 @@
 ## installation
 1. Add gem to Gemfile
   ```rb
-  # add:
+  # Gemfile in github:
+  gem 'rails_admin_users', git: 'https://github.com/afeiship/rails_admin_users'
+
+  # Debug in local:
   gem 'rails_admin_users', path: '/Users/feizheng/github/rails_admin_users'
   ```
 2. Install migration/views/routes/gem
