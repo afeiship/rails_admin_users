@@ -22,6 +22,14 @@ RailsAdminUsers:
   rails_admin_users:seed
 ~~~
 
+## generate
+```shell
+./bin/rails rails_admin_users:install
+bundle install
+rake db:migrate
+./bin/rails rails_pages:seed
+```
+
 ## dependencies
 ```rb
 gem 'bcrypt', '~> 3.1.7'
