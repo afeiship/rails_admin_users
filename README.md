@@ -12,10 +12,10 @@
   ```
 2. Install migration/views/routes/gem
   ```shell
-  ./bin/rails rails_admin_users:install
+  ./bin/rails g rails_admin_users:install
   bundle install
   rake db:migrate
-  ./bin/rails rails_pages:seed
+  ./bin/rails g rails_pages:seed
   ```
 
 ## option
