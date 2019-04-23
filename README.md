@@ -75,3 +75,4 @@ edit_user GET    /users/:id/edit(.:format) rails_admin_users/users#edit
 ## resources
 - https://medium.com/@wintermeyer/authentication-from-scratch-with-rails-5-2-92d8676f6836
 - https://www.mccartie.com/tech/2016/11/03/token-based-api-authentication.html
+- https://ruby-china.github.io/rails-guides/generators.html
