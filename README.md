@@ -15,7 +15,7 @@
   ./bin/rails g rails_admin_users:install
   bundle install
   rake db:migrate
-  ./bin/rails g rails_pages:seed
+  ./bin/rails g rails_admin_users:seed
   ```
 
 ## option
