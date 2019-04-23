@@ -1,6 +1,9 @@
 # RailsAdminUsers
 > Rails gem for admin users.
 
+## demo project
+- https://github.com/afeiship/rails-module-admin-users
+
 ## installation
 1. Add gem to Gemfile
   ```rb
